@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PlayHitz -stream,listen and download</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="/icons8-play-16.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+  <main class="main_wrapper">
+ <!--    top header -->
+    <header id="header">
+
+      <!-- logo -->
+      <div class="logo_wrapper">
+        <img src="img.png" alt="">
+
+        <h2 class="app_name">PlayHitz</h2>
+        <!-- <img width="64" height="64" src="https://img.icons8.com/arcade/64/000000/play.png" alt="play"/> -->
+      </div>
+
+      <!-- search -->
+      <div class="mainsearch_wrapper">
+        <div class="search_container">
+          <i class=" fa-solid fa-magnifying-glass"></i>
+          <input type="search" name="mainsearch" id="main_search"
+            placeholder="search for artists,songs albums,videos">
+        </div>
+      </div>
+
+      <!-- notification and menu bar -->
+      <div class="notification_and_bar">
+        <div>
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+     <!--    main body -->
+    <section class="main_body">
+      <div class="side_menu">
+        <ul>
+          <li class="active"><a href=""><i class="fa-solid fa-home"></i> <span>Home</span></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i> <span>Discover</span></a>
+          </li>
+          <li><a href=""><i class="fa-solid fa-chart-simple"></i> <span>Billboard Top 100</span></a></li>
+          <li><a href=""><i class="fa-solid fa-star"></i> <span>Premium Version</span></a></li>
+
+        </ul>
+      </div>
+      <div id="main_content_wrapper" >
+    <div>   
+   <div class="sliderContainer">
+          <div class="slider  single-item">
+            <div class="item">
+              <img src="num1.jpg" />
+            </div>
+
+            <div class="item">
+              <img src="num2.jpg " />
+            </div>
+
+            <div class="item">
+              <img src="num3.jpg " />
+            </div>
+
+            <div class="item">
+              <img src="num4.jpg " />
+            </div>
+
+            <div class="item">
+              <img src="num5.jpg " />
+            </div>
+
+            <div class="item">
+              <img src="num4.jpg " />
+            </div>
+          </div>
+        </div>
+        <section id="trending" class="home_music_list">
+          <aside>
+            <h2 class="">Trending Songs</h2>
+            <ul data-glue="in" class="aside_slide"  id="trendingContainer">
+              <!--  <li class="wrapper">
+                <div class="image_container">
+                  <div class="overlay playing ">
+                    <div class="playpause"><i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause"></i></div>
+                  </div>
+                  <img src="num1.jpg" alt="">
+                  <div class="no_of_listen">
+                    <span><i class="fa-solid fa-headphones"></i>1000</span>
+                  </div>
+                </div>
+                <div class="song_details">
+                  <a href="" class="song_author">Dunsin Oyekan</a>
+                  <p class="song_title">Halleluyah</p>
+                </div>
+              </li>
+                </li> -->
+            </ul>
+          </aside>
+        </section>
+
+        <section id="afrobeats" class="home_music_list">
+          <aside>
+            <h2>Afro Beat</h2>
+            <ul class="aside_slide" id="Afropopsong"> </ul>
+          </aside>
+        </section>
+ 
+        <section id="gospelsongs" class="home_music_list">
+          <aside>
+            <h2 class="">Gospel Songs</h2>
+            <ul class="aside_slide" id="gospelContainer">
+              <li class="wrapper">
+                <div class="image_container">
+                  <div class="overlay">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-pause"></i>
+                  </div>
+                  <img src="num1.jpg" alt="">
+                  <div class="no_of_listen">
+                    <span><i class="fa-solid fa-headphones"></i>1000</span>
+                  </div>
+                </div>
+                <div class="song_details">
+                  <p class="song_author">Dunsin Oyekan</p>
+                  <p class="song_title">Halleluyah</p>
+                </div>
+              </li>
+
+            
+
+            </ul>
+          </aside>
+        </section>
+       
+</div>   
+    </section>
+
+     <!--   bottom fixed-->
+    <div class="bottom_fixed">
+      <div class="playing_song_bottom_details"  style="position: relative;">
+        <div style="position: absolute; top: -5px;left: 0; right: 0; display: flex;">
+          <input id="playingRange" style="display: block; width: 100%; cursor: pointer;" type="range" value="0" name="" max="100">
+        </div>
+        <div class="flex-1fr"  >
+          <div>
+            <img id="playing_song_img" src="num1.jpg" alt="">
+          </div>
+          <div>
+            <div>
+              <p class="line-clamp" 
+              id="playing_song_title">overflow</p><a href="|"><button class="desktop_only" >Lyrics</button></a>
+            </div>
+            <div><a     id="playing_song_name" href=""><p  class="line-clamp">dunsin oyekan ft dayo</p></a></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <i class="fa-solid fa-backward desktop_only"></i>
+          <div class="main_playing_control ">
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-pause"></i>
+          </div>
+         
+          <i class="fa-solid fa-forward desktop_only"></i>
+        </div>
+
+        <div class="  extras">
+          <i class="fa-solid fa-list"></i>
+          <div class="desktop_only">
+            <i class="fa-solid  fa-repeat"></i>
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+  integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</script>
+<!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- https://publicapis.dev/category/music -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+
+<script src="main.js"></script>
+<!-- 
+<link type="image/png" sizes="16x16" rel="icon" href=".../icons8-play-16.png">
+<link type="image/png" sizes="32x32" rel="icon" href=".../icons8-play-32.png">
+<link type="image/png" sizes="96x96" rel="icon" href=".../icons8-play-96.png">
+
+
+        <i class=" fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-pause"></i>
+        <i class="fa-solid fa-forward"></i>
+        <i class="fa-solid fa-backward"></i>
+ -->
